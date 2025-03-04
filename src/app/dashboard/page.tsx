@@ -1,20 +1,13 @@
-
-// const DashboardPage: React.FC = () => {
-//     return (
-//         <div>
-//             <h1>Welcome Mal</h1>
-//         </div>
-//     );
-// };
-
-// export default DashboardPage;
-
-import React from 'react'
-
+import Navbar from "@/components/nav/navbar";
+import Footer from "@/components/nav/footer";
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div>
+      <Navbar />
+      page ht next
+      <Footer />
+    </div>
+  );
+};
 
-export default page
+export default page;
