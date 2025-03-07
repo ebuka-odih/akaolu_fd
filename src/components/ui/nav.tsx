@@ -45,7 +45,7 @@ export function Nav({ links, isCollapsed }: NavProps) {
                     className={cn(
                       buttonVariants({
                         variant: link.href === pathName ? "default" : "ghost",
-                        size: "icon"
+                        size: "icon",
                       }),
                       "h-9 w-9",
                       link.href === pathName
@@ -78,7 +78,7 @@ export function Nav({ links, isCollapsed }: NavProps) {
                 className={cn(
                   buttonVariants({
                     variant: link.href === pathName ? "default" : "ghost",
-                    size: "sm"
+                    size: "sm",
                   }),
                   link.href === pathName
                     ? "bg-[#c10037] text-white"
