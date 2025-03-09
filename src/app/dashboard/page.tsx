@@ -1,10 +1,10 @@
 // // import { FiSidebar } from "react-icons/fi";
 
 import { DatePickerWithRange } from "@/components/ui/datedemu";
-// import Tab from "@/components/ui/tab";
-// import AreaChartSection from "@/components/ui/areaChartSection";
-// import PieChart from "@/components/ui/pieChart";
-// import RecentSales from "@/components/ui/recentReviews";
+import BarChartInteractive from "@/components/ui/section/BarChartInteractive";
+import AreaChartSection from "@/components/ui/areaChartSection";
+import PieChart from "@/components/ui/section/pieChart";
+import RecentSales from "@/components/ui/section/RecentSales";
 import Navbar from "@/components/navigation/navbar";
 import Sidebar from "@/components/ui/sidebar";
 import { MdOutlineReviews } from "react-icons/md";
@@ -38,7 +38,7 @@ const page = () => {
                 <div className="flex items-center gap-2 ">
                   <div>
                     <DatePickerWithRange />
-3                  </div>
+                  </div>
                   <div>
                     <button className="bg-blue-700 font-medium text-sm  px-4 py-2 rounded-md">
                       Download
@@ -136,22 +136,25 @@ const page = () => {
               </div>
               <div className="grid lg:grid-cols-12 grid-cols-1 gap-4">
                 <div className="lg:col-span-7 border border-gray-300 dark:border-gray-900 rounded-lg overflow-hidden">
-                  {/* <Tab /> */}
+                  <BarChartInteractive />
                 </div>
                 <div
                   className="lg:col-span-5 h-full w-full 
                  rounded-lg border border-gray-300 dark:border-gray-900 "
                 >
-2                </div>
+                  <RecentSales />
+                </div>
               </div>
               <div className="grid lg:grid-cols-12 grid-cols-1 gap-4 mt-4">
                 <div className="lg:col-span-7 border border-gray-300 dark:border-gray-900 rounded-lg overflow-hidden">
-3                </div>
+                  <PieChart />{" "}
+                </div>
                 <div
                   className="lg:col-span-5 h-full w-full 
                  rounded-lg border border-gray-300 dark:border-gray-900"
                 >
-4                </div>
+                  <AreaChartSection />
+                </div>
               </div>
             </div>
           </div>{" "}
