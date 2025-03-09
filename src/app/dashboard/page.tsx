@@ -1,12 +1,12 @@
 // // import { FiSidebar } from "react-icons/fi";
 
-// import { DatePickerWithRange } from "@/components/datedemo";
+import { DatePickerWithRange } from "@/components/ui/datedemu";
 // import Tab from "@/components/ui/tab";
 // import AreaChartSection from "@/components/ui/areaChartSection";
 // import PieChart from "@/components/ui/pieChart";
 // import RecentSales from "@/components/ui/recentReviews";
 import Navbar from "@/components/navigation/navbar";
-// import Navbar from "@/components/nav/navbar";
+import Sidebar from "@/components/ui/sidebar";
 import { MdOutlineReviews } from "react-icons/md";
 import { MdOutlinePreview } from "react-icons/md";
 import { MdOutlineStarRate } from "react-icons/md";
@@ -17,7 +17,7 @@ const page = () => {
     <div className="flex bg-gray-200 dark:bg-slate-950 h-screen">
       {/* Sidebar */}
       <div className="max-h-screen overflow-y-auto bg-gray-800 hidden md:flex">
-        {/* <Sidebar /> */}
+        <Sidebar />
       </div>
 
       {/* Page */}
@@ -37,7 +37,7 @@ const page = () => {
               <div className="hidden md:flex gap-3 items-center justify-end">
                 <div className="flex items-center gap-2 ">
                   <div>
-                    {/* <DatePickerWithRange /> */}
+                    <DatePickerWithRange />
 3                  </div>
                   <div>
                     <button className="bg-blue-700 font-medium text-sm  px-4 py-2 rounded-md">
