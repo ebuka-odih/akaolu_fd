@@ -1,6 +1,5 @@
 // import { NavItem } from "@/types";
-import { NavItem } from "@/config/types";
-
+import { NavItem } from "@/config/types/index";
 export const config = {
   profile_picture: "/images/profile.jpg",
 };
@@ -103,7 +102,8 @@ export const reviews: Review[] = [
   {
     initials: "IN",
     name: "Isabella Nguyen",
-    review: "Your attention to detail and commitment to delivering high-quality results are truly remarkable. It’s inspiring to see how you approach challenges with such precision and dedication, ensuring every aspect of your work is executed flawlessly. Your efforts set a benchmark for excellence that motivates everyone around you",
+    review:
+      "Your attention to detail and commitment to delivering high-quality results are truly remarkable. It’s inspiring to see how you approach challenges with such precision and dedication, ensuring every aspect of your work is executed flawlessly. Your efforts set a benchmark for excellence that motivates everyone around you",
     date: "19/11/2024",
   },
   {
